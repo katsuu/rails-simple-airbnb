@@ -1,0 +1,62 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+@import "flats";
+
+body {
+  font-family: "Varela", sans-serif;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(100,100,100);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(60,60,60);
+  font-weight: bolder;
+}
+
+nav {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  background-color: rgb(234, 85, 93);
+  box-shadow: 1px 1px 3px grey;
+  img {
+    height: 100%;
+
+  }
+  a {
+    color: white;
+    display: inline-block;
+    height: 100%;
+  }
+  a:hover {
+    font-weight: bolder;
+    color: white;
+  }
+}
+
+.container {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+

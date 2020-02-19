@@ -1,0 +1,27 @@
+<div class="flat-title" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(<%= @flat.banner_url %>); background-repeat: no-repeat; background-size: cover; background-position: center;">
+  <h1><%= @flat.name %></h1>
+  <p><%= @flat.address %></p>
+  <span><%= link_to "Edit", edit_flat_path(@flat) %></span>
+  <span><%= link_to "Delete", flat_path(params[:id]), method: :delete, data: { confirm: "Are you sure?" } %></span>
+</div>
+
+<div class="container">
+  <div class="flat-description">
+    <h3>A bit more about this flat</h3>
+    <p><%= @flat.description %></p>
+  </div>
+
+  <div class="flat-details">
+    <h3>Details</h3>
+    <span><%= icon('fas', 'users') %> <%= @flat.number_of_guests %></span>
+    <span><%= icon('fas', 'pound-sign') %> <%= @flat.price_per_night %></span>
+  </div>
+
+  <div class="flat-share">
+    <h4>Share</h4>
+    <span><%= link_to icon('fab', 'facebook-f') %></span>
+    <span><%= link_to icon('fab', 'twitter') %></span>
+    <span><%= link_to icon('fab', 'pinterest') %></span>
+    <span><%= link_to icon('fab', 'instagram') %></span>
+  </div>
+</div>
